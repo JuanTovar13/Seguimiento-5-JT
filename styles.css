@@ -1,4 +1,4 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body {
     color: #333;
 }
 
-/* Encabezado y banner */
+
 header {
     background-color: #003D71;
     color: white;
@@ -30,7 +30,7 @@ header {
     display: block;
 }
 
-/* Barra de navegación */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -45,7 +45,7 @@ nav {
 }
 
 .logo {
-    width: 100px; /* Ajusta este tamaño según sea necesario */
+    width: 100px; 
     margin-right: 20px;
 }
 
@@ -81,7 +81,7 @@ nav ul li a:hover {
     border-radius: 4px;
 }
 
-/* Barra de filtros */
+
 .filters {
     display: flex;
     justify-content: center;
@@ -104,7 +104,7 @@ nav ul li a:hover {
     border-radius: 4px;
 }
 
-/* Lista de productos */
+
 .product-list {
     display: flex;
     justify-content: space-around;
@@ -153,7 +153,6 @@ nav ul li a:hover {
 .product-item a:hover {
     background-color: #0056b3;
 }
-/* Sección de detalles del producto */
 .product-detail {
     display: flex;
     justify-content: space-around;
@@ -221,7 +220,7 @@ nav ul li a:hover {
     background-color: #0056b3;
 }
 
-/* Estilo para el enlace de volver */
+
 footer {
     text-align: center;
     margin: 40px;
