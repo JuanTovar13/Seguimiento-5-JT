@@ -8,23 +8,79 @@
 </head>
 <body>
     <header>
-        <div class="banner">
-            <img src="https://img.freepik.com/premium-vector/flash-sale-colorful-sale-banner_61558-6.jpg" alt="Productos Destacados">
-        </div>
+       
+        <!-- Barra de navegación con logo y barra de búsqueda -->
         <nav>
             <div class="nav-left">
+                <img src="https://t4.ftcdn.net/jpg/03/31/93/85/360_F_331938599_nmkc39B7E74s1G5P01b0YCJ6x0MNMqJz.jpg" alt="Logo" class="logo">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Categorias</a></li>
-                    <li><a href="#">Ofertas</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="">Categorías</a></li>
+                    <li><a href="">Ofertas</a></li>
+                    <li><a href="">Contacto</a></li>
                 </ul>
             </div>
             <div class="nav-right">
-                <input type="text" placeholder="Buscar productos..." id="searchbar">
+                <input type="text" placeholder="Buscar productos..." id="searchBar">
             </div>
         </nav>
+        <div class="banner">
+            <img src="c:\Users\pc\Downloads\banner.png" alt="Productos Destacados">
+        </div>
     </header>
+ <!-- Barra de filtros -->
+ <section class="filters">
+    <label for="category">Categoría:</label>
+    <select id="category">
+        <option value="todos">Todos</option>
+        <option value="electronica">Electrónica</option>
+        <option value="ropa">Ropa</option>
+        <option value="hogar">Hogar</option>
+        <option value="hogar">Agro</option>
+        <option value="hogar">Belleza</option>
+        <option value="hogar">Animales y mascotas</option>
+        <option value="hogar">Herramientas</option>
+    </select>
+</section>
 
+<!-- Lista de productos -->
+<section class="product-list">
+    <div class="product-item">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_819668-MLU74844168438_032024-O.webp" alt="Producto 1">
+        <h3>Audifonos Compatible Con iPhone Y Android Color Blanco Luz Verde</h3>
+        <p>$94.905</p>
+        <a href="product_detail1.html">Ver más</a>
+    </div>
+    <div class="product-item">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_830143-MCO74935649097_032024-O.webp" alt="Producto 2">
+        <h3>Camiseta Puma Ess Logo Tee Hombre-blanco</h3>
+        <p>$128.250</p>
+        <a href="product_detail2.html">Ver más</a>
+    </div>
+    <div class="product-item">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_707914-MCO77709721894_072024-O.webp" alt="Producto 3">
+        <h3>Pantalon Hombre Patprimo Negro Algodón</h3>
+        <p>$149.900</p>
+        <a href="product_detail3.html">Ver más</a>
+    </div>
+    <div class="product-item">
+        <img src="https://http2.mlstatic.com/D_Q_NP_933183-MLU74851510478_032024-P.webp" alt="Producto 4">
+        <h3>Cómoda Alta Huna, Blanco Y Macadamia</h3>
+        <p>$482.900</p>
+        <a href="product_detail4.html">Ver más</a>
+    </div>
+    <div class="product-item">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_821103-MCO78567064951_082024-O.webp" alt="Producto 5">
+        <h3>Cortina Semi Blackout Casatua 2 Paños 140x220cm Aislante</h3>
+        <p>$119.990</p>
+        <a href="product_detail5.html">Ver más</a>
+    </div>
+    <div class="product-item">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_971639-CBT77508758478_072024-O.webp" alt="Producto 6">
+        <h3>Cámara Digital Hd De 4k Con Zoom Digital De 28x</h3>
+        <p>$174.807</p>
+        <a href="product_detail6.html">Ver más</a>
+    </div>
+</section>
 </body>
 </html>

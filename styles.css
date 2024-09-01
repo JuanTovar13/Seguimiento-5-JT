@@ -1,3 +1,4 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -7,36 +8,50 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #003D71;
     color: #333;
 }
 
+/* Encabezado y banner */
 header {
-    background-color: #003C70;
+    background-color: #003D71;
     color: white;
     padding: 10px 0;
 }
 
 .banner {
     display: flex;
-    box-sizing: content-box;
     justify-content: center;
-
-
-
 }
 
 .banner img {
-    width: 20%;
+    width: 100%;
     height: auto;
-    
+    display: block;
+}
+
+/* Barra de navegación */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0095DB;
+    padding: 10px 20px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px; /* Ajusta este tamaño según sea necesario */
+    margin-right: 20px;
 }
 
 nav ul {
+    list-style: none;
     display: flex;
-    justify-content:space-around;
-    background-color: #68a3e2;
-    padding: 10px;
     
 }
 
@@ -44,14 +59,180 @@ nav ul li {
     margin: 0 15px;
 }
 
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 nav ul li a:hover {
     text-decoration: underline;
 }
 
-nav ul li a {
-    text-decoration: none;
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+#searchBar {
+    padding: 8px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Barra de filtros */
+.filters {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background-color: #0095DB;
+    border-bottom: 2px solid #0270a3;
+    margin: -10px 0;
+    font-weight: bold;
     color: white;
+}
+
+.filters label {
+    margin-top: 5px;
+    margin-right: 20px;
+}
+
+.filters select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Lista de productos */
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.product-item {
+    background-color: #FEC20E;
+    padding: 15px;
+    margin: 10px;
+    border-bottom: 4px solid #F8801E;
+    border-left: 4px solid #F8801E;
+    border-radius: 4px;
+    width: calc(33.333% - 40px);
+    text-align: center;
+}
+
+.product-item img {
+    width: auto;
+    height: 200px;
+    margin-bottom: 10px;
+    border: 2px solid #F8801E;
+}
+
+.product-item h3 {
+    margin-bottom: 10px;
+    color: black;
+}
+
+.product-item p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.product-item a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #003D71;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.product-item a:hover {
+    background-color: #0056b3;
+}
+/* Sección de detalles del producto */
+.product-detail {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #FEC20E;
+    margin: 40px;
+    border-bottom: 4px solid #F8801E;
+    border-left: 4px solid #F8801E;
+    border-radius: 4px;
+}
+
+.product-image {
+    flex: 1;
+    padding: 10px;
+}
+
+.product-image img {
+    width: 80%;
+    height: auto;
+    border-radius: 4px;
+    border: 2px solid #F8801E;
+}
+
+.product-info {
+    flex: 2;
+    padding: 10px;
+}
+
+.product-info h2 {
+    color: black;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.description {
+    margin-bottom: 20px;
+}
+
+.specifications ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.product-actions {
+    margin-top: 20px;
+}
+
+.product-actions .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #003D71;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.product-actions .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para el enlace de volver */
+footer {
+    text-align: center;
+    margin: 40px;
+}
+
+.back-link {
+    color: white;
+    text-decoration: none;
     font-weight: bold;
 }
 
-
+.back-link:hover {
+    text-decoration: underline;
+}
